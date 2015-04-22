@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -15,7 +13,8 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$header-color:     #281352;
+$brand-color:      lighten(#281352, 10%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -42,11 +41,94 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "bootstrap",
         "base",
-        "layout",
+        // "layout",
         "syntax-highlighting"
 ;
+
+a:visited {
+  color: $brand-color;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+header {
+  color: #fff;
+  background-color: $header-color;
+
+  .title, .title:visited {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: #fff;
+  }
+
+  .chapter-link {
+    float: right;
+    line-height: 56px;
+
+    a, a:visited {
+      color: lighten($brand-color, 55%);
+    }
+  }
+  .tagline {
+    line-height: 56px;
+  }
+}
+
+.page-content {
+  margin: $spacing-unit 0;
+
+  @media (max-width: 768px) {
+    margin: $spacing-unit*2/3 0;
+  }
+}
+
+li:last-child > h2 {
+  margin-bottom: 0;
+}
+
+.about {
+  margin-bottom: $spacing-unit;
+
+  footer & {
+    margin-bottom: $spacing-unit/2;
+  }
+}
+
+.chapter-list {
+  ul {
+    margin-left: 20px;
+  }
+  & > ul {
+    margin-left: 0px;
+  }
+}
+
+footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+
+  @media (max-width: 768px) {
+    padding: $spacing-unit/2 0;
+  }
+}
+
+.social-media-list {
+  li {
+    display: inline-block;
+    margin-right: $spacing-unit;
+
+    &:last-child {
+      margin-right: inherit;
+    }
+  }
+}
