@@ -1,0 +1,11 @@
+ruby:
+  @title = chapter.name
+
+h2 = chapter.name
+= twitter_button(chapter.twitter) if chapter.twitter
+
+h4 Where
+p = paragraphs(chapter.location)
+
+h4 When
+p = paragraphs(chapter.time)

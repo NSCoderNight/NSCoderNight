@@ -1,0 +1,8 @@
+= wrap_layout :layout do
+  .post
+    header.post-header
+      h1.post-title = @title
+      = yield_content :post_header
+
+    article.post-content
+      == yield
