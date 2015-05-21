@@ -81,4 +81,8 @@ helpers do
 
   def github_username; end
   def twitter_username; 'NSCoderNight'; end
+
+  def site_title; 'NSCoderNight'; end
+  def site_baseurl; ''; end # the subpath of your site, e.g. /blog/
+  def site_description; 'Socialize while you serialize'; end
 end
