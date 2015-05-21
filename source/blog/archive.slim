@@ -8,4 +8,4 @@
                 h3
                     a href=post.url = post.title
                 p.byline.vcard
-                    time.updated = long_date(post.date)
+                    time.updated = post.date.strftime('%B %-d, %Y')
