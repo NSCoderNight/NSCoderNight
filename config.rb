@@ -79,8 +79,8 @@ helpers do
     post.body == post.summary ? post.body : post.summary + "<a href=#{post.url} title=#{post.title}>Read More</a>"
   end
 
-  def github_username; end
-  def twitter_username; 'NSCoderNight'; end
+  def github_username; 'nscodernight'; end
+  def twitter_username; 'nscodernight'; end
 
   def site_title; 'NSCoderNight'; end
   def site_baseurl; ''; end # the subpath of your site, e.g. /blog/
