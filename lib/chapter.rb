@@ -11,6 +11,11 @@ class Chapter
     twitter
     province
     country
+    website
+    day
+    organizer_name
+    organizer_email
+	organizer_twitter
   ).freeze
 
   ATTRS.each { |a| attr_reader a }
