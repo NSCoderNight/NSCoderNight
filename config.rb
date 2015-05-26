@@ -85,4 +85,5 @@ helpers do
   def site_title; 'NSCoderNight'; end
   def site_baseurl; ''; end # the subpath of your site, e.g. /blog/
   def site_description; 'Socialize while you serialize'; end
+  def contact_sentence; 'Please contact us at <a href="mailto:info@nscodernight.com">info@nscodernight.com</a> or <a href="http://twitter.com/nscodernight">@nscodernight</a> if you have questions.'; end
 end
