@@ -1,4 +1,19 @@
-h2 Chapters
+.container
 
-- for chapter in chapters
-  a href=chapter.path.remove('.html') = chapter.name
+	.row
+		.col-sm-e.hidden-xs
+			h3.about
+				a href="about" title="About NSCoderNight" About
+			.chapter-list
+				h3
+					a href="chapters" title="Chapter List" Chapters
+				ul.list-countries
+					li
+						| USA
+						ul.list-provinces
+							li
+								| CA
+								ul.list-cities
+									li
+										a href="chapters/sf" San Francisco
+									
