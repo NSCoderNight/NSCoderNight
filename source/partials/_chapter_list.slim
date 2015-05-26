@@ -4,7 +4,13 @@
 			li
 				| #{country}
 				ul.list-chapters
-					- for chapter in (chapters.select { |element| element.country==country }).sort! {|x, y| x.name <=> y.name}
+					- for chapter in (chapters.select { |element| element.country==country }).sort! \
+						{ |x, y| \
+						if x.province != y.province then \
+							x.province <=> y.province \
+						else \
+							x.name <=> y.name \
+						end }
 						li
 							a href="/chapters#{chapter.path}/" 
 								| #{chapter.name}
