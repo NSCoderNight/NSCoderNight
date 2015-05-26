@@ -7,7 +7,10 @@ ruby:
   title = chapter.name
 
 header.post-header
-	h1.post-title #{chapter.name}
+	h1.post-title 
+		| #{chapter.name}
+		- if chapter.province
+			|, #{chapter.province}
 
 .container
 	- if chapter.organizer_name
@@ -15,6 +18,9 @@ header.post-header
 		
 		p
 			| #{chapter.organizer_name}
+			- if chapter.organizer_website
+				|<BR>
+				a href="#{chapter.organizer_website}" #{chapter.organizer_website}
 			- if chapter.organizer_twitter
 				|<BR>
 				== twitter_button(chapter.organizer_twitter)
@@ -33,11 +39,10 @@ header.post-header
 			| #{chapter.day}
 		- else
 			| Every Tuesday
-			| <BR>
-		- if chapter.time
-			p = paragraphs(chapter.time)
+		- if chapter.meeting_time
+			| <BR>#{chapter.meeting_time}
 		- else
-			| 7:00 p.m. - 10:00 p.m.
+			| <BR>7:00 p.m. - 10:00 p.m.
 
 	- if chapter.website or chapter.twitter
 		p <B>On the Internet:</B>

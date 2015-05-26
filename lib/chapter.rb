@@ -7,7 +7,7 @@ class Chapter
   ATTRS = %i(
     location
     name
-    time
+    meeting_time
     twitter
     province
     country
@@ -16,6 +16,7 @@ class Chapter
     organizer_name
     organizer_email
 	organizer_twitter
+	organizer_website
   ).freeze
 
   ATTRS.each { |a| attr_reader a }
