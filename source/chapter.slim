@@ -48,7 +48,7 @@ header.post-header
 		p <B>On the Internet:</B>
 	
 		- if chapter.website
-			p
-				a href="#{chapter.website}" title="#{chapter.website}" #{chapter.website}
-
-		= twitter_button(chapter.twitter) if chapter.twitter
+			a href="#{chapter.website}" title="#{chapter.website}" #{chapter.website}<BR>
+		- if chapter.twitter
+			== twitter_button(chapter.twitter)
+			|<BR>
