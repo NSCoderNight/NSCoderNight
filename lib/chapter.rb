@@ -9,6 +9,8 @@ class Chapter
     name
     time
     twitter
+    province
+    country
   ).freeze
 
   ATTRS.each { |a| attr_reader a }

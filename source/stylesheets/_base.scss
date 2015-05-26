@@ -213,3 +213,12 @@ pre {
   }
 }
 
+
+.page-content {
+  margin: $spacing-unit 0;
+
+  @media (max-width: 768px) {
+    margin: $spacing-unit*2/3 0;
+  }
+}
+

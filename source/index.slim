@@ -1,19 +1,28 @@
 .container
 
 	.row
-		.col-sm-e.hidden-xs
+		.col-sm-3.hidden-xs
 			h3.about
 				a href="about" title="About NSCoderNight" About
 			.chapter-list
 				h3
 					a href="chapters" title="Chapter List" Chapters
 				ul.list-countries
-					li
-						| USA
-						ul.list-provinces
-							li
-								| CA
-								ul.list-cities
+					- for country in (chapters.map { |element| element.country }).uniq.sort
+						li
+							| #{country}
+							ul.list-chapters
+								- for chapter in (chapters.select { |element| element.country==country }).sort! {|x, y| x.name <=> y.name}
 									li
-										a href="chapters/sf" San Francisco
-									
+										a href="chapters#{chapter.path}" 
+											| #{chapter.name}
+											- if chapter.province
+												|, #{chapter.province}
+							
+		.col-sm-9
+			ul.post-list
+				- for article in blog.articles
+					li
+						span.post-meta #{article.date}
+						h2
+							a href="foo" title="Welcome to Jekyll" Welcome to Jekyll
