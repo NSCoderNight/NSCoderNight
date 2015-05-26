@@ -14,6 +14,6 @@
 			ul.post-list
 				- for article in blog.articles
 					li
-						span.post-meta #{article.date}
+						span.post-meta #{article.date.strftime('%B %-d, %Y')}
 						h2
-							a href="foo" title="Welcome to Jekyll" Welcome to Jekyll
+							a href="#{article.url}" title="#{article.title}" #{article.title}
