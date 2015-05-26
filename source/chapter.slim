@@ -4,8 +4,10 @@ ruby:
 h2 = chapter.name
 = twitter_button(chapter.twitter) if chapter.twitter
 
-h4 Where
-p = paragraphs(chapter.location)
+- if chapter.location
+	h4 Where
+	p = paragraphs(chapter.location)
 
-h4 When
-p = paragraphs(chapter.time)
+- if chapter.time
+	h4 When
+	p = paragraphs(chapter.time)

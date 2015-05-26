@@ -32,6 +32,6 @@ class Chapter
   end
 
   def path
-    "/#{name.parameterize}.html"
+    "/#{name.parameterize}"
   end
 end

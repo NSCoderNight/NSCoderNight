@@ -6,20 +6,9 @@
 				a href="about" title="About NSCoderNight" What Is It?
 			h3.about
 				a href="starting" title="Starting a Chapter" Start Your Own
-			.chapter-list
-				h3
-					a href="chapters" title="Chapter List" Chapters
-				ul.list-countries
-					- for country in (chapters.map { |element| element.country }).uniq.sort
-						li
-							| #{country}
-							ul.list-chapters
-								- for chapter in (chapters.select { |element| element.country==country }).sort! {|x, y| x.name <=> y.name}
-									li
-										a href="chapters#{chapter.path}" 
-											| #{chapter.name}
-											- if chapter.province
-												|, #{chapter.province}
+			h3
+				a href="chapters" title="Chapter List" Chapters
+			== partial "partials/chapter_list"
 							
 		.col-sm-9
 			ul.post-list

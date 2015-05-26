@@ -64,7 +64,7 @@ $:.unshift File.expand_path(File.join(__FILE__, '..', 'lib'))
 require 'chapter'
 
 Chapter.all.each do |chapter|
-  proxy chapter.path, "/chapter.html", locals: { chapter: chapter, title: chapter.name }, ignore: true
+  proxy "chapters#{chapter.path}/index.html", "/chapter.html", locals: { chapter: chapter, title: chapter.name }, ignore: true
 end
 
 helpers do
