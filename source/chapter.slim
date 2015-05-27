@@ -6,43 +6,42 @@ ruby:
   @title = chapter.name
   title = chapter.name
 
-.container
-	- if chapter.organizer_name
-		p <B>Organizer:</B> 
-		
-		p
-			| #{chapter.organizer_name}
-			- if chapter.organizer_website
-				|<BR>
-				a href="#{chapter.organizer_website}" #{chapter.organizer_website}
-			- if chapter.organizer_twitter
-				|<BR>
-				== twitter_button(chapter.organizer_twitter)
-			- if chapter.organizer_email
-				|<BR>
-				a mailto="#{chapter.organizer_email}" Email
-
-	- if chapter.location
-		p
-			p <B>Where:</B>
-			p = paragraphs(chapter.location)
-
-	p
-		p <B>When:</B>
-		- if chapter.day
-			| #{chapter.day}
-		- else
-			| Every Tuesday
-		- if chapter.meeting_time
-			| <BR>#{chapter.meeting_time}
-		- else
-			| <BR>7:00 p.m. - 10:00 p.m.
-
-	- if chapter.website or chapter.twitter
-		p <B>On the Internet:</B>
+- if chapter.organizer_name
+	p <B>Organizer:</B> 
 	
-		- if chapter.website
-			a href="#{chapter.website}" title="#{chapter.website}" #{chapter.website}<BR>
-		- if chapter.twitter
-			== twitter_button(chapter.twitter)
+	p
+		| #{chapter.organizer_name}
+		- if chapter.organizer_website
 			|<BR>
+			a href="#{chapter.organizer_website}" #{chapter.organizer_website}
+		- if chapter.organizer_twitter
+			|<BR>
+			== twitter_button(chapter.organizer_twitter)
+		- if chapter.organizer_email
+			|<BR>
+			a mailto="#{chapter.organizer_email}" Email
+
+- if chapter.location
+	p
+		p <B>Where:</B>
+		p = paragraphs(chapter.location)
+
+p
+	p <B>When:</B>
+	- if chapter.day
+		| #{chapter.day}
+	- else
+		| Every Tuesday
+	- if chapter.meeting_time
+		| <BR>#{chapter.meeting_time}
+	- else
+		| <BR>7:00 p.m. - 10:00 p.m.
+
+- if chapter.website or chapter.twitter
+	p <B>On the Internet:</B>
+
+	- if chapter.website
+		a href="#{chapter.website}" title="#{chapter.website}" #{chapter.website}<BR>
+	- if chapter.twitter
+		== twitter_button(chapter.twitter)
+		|<BR>
