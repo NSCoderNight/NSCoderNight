@@ -8,7 +8,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #444;
 $background-color: #fdfdfd;
 $header-color:     #281352;
 $brand-color:      lighten(#281352, 10%);
@@ -41,7 +41,8 @@ $on-laptop:        800px;
 @import
         "_bootstrap",
         "_base",
-        "_syntax_highlighting"
+        "_syntax_highlighting",
+        "_post"
 ;
 
 a:visited {
@@ -118,6 +119,9 @@ footer {
 }
 
 .social-media-list {
+  .icon {
+    padding-right: 5px;
+  }
   li {
     display: inline-block;
     margin-right: $spacing-unit;
