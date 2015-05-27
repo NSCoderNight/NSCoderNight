@@ -1,16 +1,10 @@
 .chapter-list
 	ul.list-countries
-		- for country in (chapters.map { |element| element.country }).uniq.sort
+		- chapters.sort_by { |c| [c.country, c.province, c.name] }.group_by(&:country).each do |country, chapters_in_country|
 			li
 				| #{country}
-				ul.list-chapters
-					- for chapter in (chapters.select { |element| element.country==country }).sort! \
-						{ |x, y| \
-						if x.province != y.province then \
-							x.province <=> y.province \
-						else \
-							x.name <=> y.name \
-						end }
+				- for chapter in chapters_in_country
+					ul.list-chapters
 						li
 							a href="/chapters#{chapter.path}/" 
 								| #{chapter.name}
