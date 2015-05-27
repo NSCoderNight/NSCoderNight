@@ -6,12 +6,6 @@ ruby:
   @title = chapter.name
   title = chapter.name
 
-header.post-header
-	h1.post-title 
-		| #{chapter.name}
-		- if chapter.province
-			|, #{chapter.province}
-
 .container
 	- if chapter.organizer_name
 		p <B>Organizer:</B> 
