@@ -1,6 +1,7 @@
 ---
 pageable: true
 per_page: 5
+title: Blog
 ---
 ruby:
   if paginate
@@ -12,7 +13,6 @@ ruby:
     @pagination_links[:next] = {href: next_page.url} if next_page
   end
 
-== partial('partials/index_header', locals: {title: 'Blog'})
-
-- for article in page_articles
-  == partial('partials/post', locals: {article: article})
+.post
+	.container-fluid
+		== partial "partials/posts"
