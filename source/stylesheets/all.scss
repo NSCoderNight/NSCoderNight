@@ -88,10 +88,6 @@ header {
   }
 }
 
-li:last-child > h2 {
-  margin-bottom: 0;
-}
-
 .about {
   margin-bottom: $spacing-unit;
 
@@ -111,7 +107,7 @@ li:last-child > h2 {
 
 footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit/2 0;
 
   @media (max-width: 768px) {
     padding: $spacing-unit/2 0;
