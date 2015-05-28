@@ -1,0 +1,12 @@
+.chapter-list
+	ul.list-countries
+		- chapters.sort_by { |c| [c.country, c.province, c.name] }.group_by(&:country).each do |country, chapters_in_country|
+			li
+				| #{country}
+				- for chapter in chapters_in_country
+					ul.list-chapters
+						li
+							a href="/chapters#{chapter.path}/" 
+								| #{chapter.name}
+								- if chapter.province
+									|, #{chapter.province}

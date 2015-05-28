@@ -1,0 +1,21 @@
+.container-fluid
+
+	.row
+		.col-sm-3.hidden-xs
+			h3.about
+				a href="about" title="About NSCoderNight" What Is It?
+			h3.about
+				a href="starting" title="Starting a Chapter" Start Your Own
+			h3
+				a href="chapters" title="Chapter List" Chapters
+			== partial "partials/chapter_list"
+							
+		.col-sm-9
+			ul.post-list
+				- for article in blog.articles
+					li
+						span.post-meta #{article.date.strftime('%B %-d, %Y')}
+						h2
+							a href="#{article.url}" title="#{article.title}" #{article.title}
+
+						| #{article.summary}
