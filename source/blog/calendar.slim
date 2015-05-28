@@ -1,4 +1,5 @@
 ---
+layout: page
 pageable: true
 per_page: 5
 ---
@@ -21,7 +22,8 @@ ruby:
       year
   end
 
-== partial('partials/index_header', locals: {title: "Archive for #{page_scope}"})
+  @title = "Archive for #{page_scope}"
 
-- for article in page_articles
-  == partial('partials/post', locals: {article: article})
+ul.post-list
+	- for article in page_articles
+		== partial('partials/post_in_list', locals: {article: article})				
