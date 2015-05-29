@@ -1,0 +1,17 @@
+@charset "utf-8";
+.post {
+	h1 {
+		color: $header-color;
+		background-color: none;
+		padding-bottom: .25em;
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			position: relative;
+			bottom: .15em;
+			border-bottom: 1px solid lighten($header-color, 50%);
+			z-index: -1;
+		}
+	}
+}

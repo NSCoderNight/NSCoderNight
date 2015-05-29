@@ -1,0 +1,7 @@
+= wrap_layout :layout do
+  .container-fluid
+	  .post
+		h1 = @title || current_page.data.title
+
+		article.post-content
+		== yield

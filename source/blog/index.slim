@@ -1,0 +1,18 @@
+---
+layout: page
+pageable: true
+per_page: 5
+title: Blog
+---
+ruby:
+  if paginate
+    @pagination_links = {
+      current: page_number,
+      total: num_pages,
+    }
+    @pagination_links[:previous] = {href: prev_page.url} if prev_page
+    @pagination_links[:next] = {href: next_page.url} if next_page
+  end
+
+.post
+	== partial "partials/posts"

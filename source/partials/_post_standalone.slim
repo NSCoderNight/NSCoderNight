@@ -1,0 +1,17 @@
+h1
+	| #{article.title}
+
+section.entry-content.clearfix = summary_or_post(article)
+
+em
+	| #{article.date.strftime('%B %-d, %Y')}
+	- if article.data.author
+		|, by #{article.data.author}
+
+- unless article.tags.empty?
+	section.tags
+		span.tags-title
+			span = 'Tags: '
+			- for tag in article.tags
+				span.tag-label
+					a href=tag_path(tag) = tag
