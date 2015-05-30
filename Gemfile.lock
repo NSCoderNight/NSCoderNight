@@ -143,6 +143,3 @@ DEPENDENCIES
   middleman-sprockets
   sass
   slim
-
-BUNDLED WITH
-   1.10.0
