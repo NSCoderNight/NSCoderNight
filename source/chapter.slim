@@ -3,8 +3,13 @@ layout: page
 ---
 
 ruby:
-  @title = chapter.name
-  title = chapter.name
+  if chapter.province
+    @title = chapter.name + ", " + chapter.province
+    title = chapter.name + ", " + chapter.province
+  else
+    @title = chapter.name
+    title = chapter.name
+  end
 
 - if chapter.organizer_name
 	p <B>Organizer:</B> 
