@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -75,34 +73,35 @@ li {
 }
 
 
+/**
+ * Links
+ */
+a, a:hover {
+    color: $brand-color;
+    text-decoration: none;
+//    border-bottom: 1px solid transparent;
+
+    &:hover {
+        background: rgba(lighten($brand-color, 50%), .2);
+//        border-bottom: 1px solid rgba(lighten($brand-color, 50%), .5);
+    }
+}
+
+p {
+	a {
+        border-bottom: 1px solid rgba(lighten($brand-color, 50%), .5);
+	}
+}
+
 
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+$headers: h1, h2, h3, h4, h5, h6;
+
+#{$headers} {
     font-weight: 300;
 }
-
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
 
 /**
  * Blockquotes
