@@ -15,14 +15,19 @@ class Chapter
     day
     organizer_name
     organizer_email
-	organizer_twitter
-	organizer_website
+  	organizer_twitter
+  	organizer_website
   ).freeze
 
   ATTRS.each { |a| attr_reader a }
 
   def self.from_file(file)
-    yaml = YAML.load(file.read).with_indifferent_access
+    begin
+      yaml = YAML.load(file.read).with_indifferent_access
+    rescue
+      raise "Unable to parse the chapter info from '#{file.relative_path_from(Pathname.pwd)}'"
+    end
+
     new.tap do |chapter|
       ATTRS.each do |a|
         value = yaml[a]
