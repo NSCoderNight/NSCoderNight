@@ -8,7 +8,7 @@ install:
 - git config --global user.email "NSCoderNight@users.noreply.github.com"
 - git config --global user.name  "NSCoderNight"
 - echo -e "machine github.com\n  login $GH_TOKEN" >> ~/.netrc
-- rake bootstrap
+- bundle install --deployment --path=vendor/bundle
 script:
 - git remote set-url origin "https://github.com/NSCoderNight/NSCoderNight.git"
 - bundle exec rake deploy
