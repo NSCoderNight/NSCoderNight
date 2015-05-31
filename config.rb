@@ -86,4 +86,22 @@ helpers do
   def site_baseurl; ''; end # the subpath of your site, e.g. /blog/
   def site_description; 'Socialize while you serialize'; end
   def contact_sentence; 'Please contact us at <a href="mailto:info@nscodernight.com">info@nscodernight.com</a> or <a href="http://twitter.com/nscodernight">@nscodernight</a> if you have questions.'; end
+
+  def start_sentence(page_name)
+
+  	if page_name == 'chapters'
+  	  chapter_string = 'local chapter'
+  	else
+      chapter_string = '<a href="/chapters">local chapter</a>'
+  	end
+
+  	if page_name == 'starting'
+  	  start_string = 'start your own'
+  	else
+    	start_string = '<a href="/starting">start your own</a>'
+  	end
+
+  	'If you can\'t find a ' + chapter_string + ', we encourage you to ' + start_string + '.';
+  end
+
 end
