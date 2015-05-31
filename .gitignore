@@ -33,6 +33,7 @@ Temporary Items
 
 # Ignore bundler config
 /.bundle
+vendor/bundle
 
 # Ignore the build directory
 /build
