@@ -4,45 +4,49 @@ layout: page
 
 ruby:
   if chapter.province
-    @title = chapter.name + ", " + chapter.province
-    title = chapter.name + ", " + chapter.province
+    @title = title = chapter.name + ", " + chapter.province
   else
-    @title = chapter.name
-    title = chapter.name
+    @title = title = chapter.name
   end
 
-- if chapter.organizer_name
-	p <B>Organizer:</B> 
-	
-	p
-		| #{chapter.organizer_name}
-		- if chapter.organizer_website
-			|<BR>
-			a href="#{chapter.organizer_website}" #{chapter.organizer_website}
-		- if chapter.organizer_twitter
-			|<BR>
-			== twitter_button(chapter.organizer_twitter)
-		- if chapter.organizer_email
-			|<BR>
-			a mailto="#{chapter.organizer_email}" Email
+- if chapter.organizers.any?
+  p <B>Organizers:</B>
 
-- if chapter.location
-	p
-		p <B>Where:</B>
-		p = paragraphs(chapter.location)
+  - for organizer in chapter.organizers
+  	p
+  		| #{organizer.name}
+  		- if organizer.website
+  			|<BR>
+  			a href="#{organizer.website}" #{organizer.website}
+  		- if organizer.twitter
+  			|<BR>
+  			== twitter_button(organizer.twitter)
+  		- if organizer.email
+  			|<BR>
+  			a mailto="#{organizer.email}" Email
 
-p
-	p <B>When:</B>
-	- if chapter.day
-		| #{chapter.day}
-	- else
-		| Every Tuesday
-	- if chapter.meeting_time
-		| <BR>#{chapter.meeting_time}
-	- else
-		| <BR>7:00 p.m. - 10:00 p.m.
+- if chapter.meetings.any?
+  p
+    <B>Meetings:</B>
 
-- if chapter.website or chapter.twitter
+    - for meeting in chapter.meetings
+      - if meeting.location
+      	p
+      		p <B>Where:</B>
+      		p = paragraphs(meeting.location)
+
+      p
+      	p <B>When:</B>
+      	- if meeting.day
+      		| #{meeting.day}
+      	- else
+      		| Every Tuesday
+      	- if meeting.time
+      		| <BR>#{meeting.time}
+      	- else
+      		| <BR>7:00 p.m. - 10:00 p.m.
+
+- if chapter.website || chapter.twitter
 	p <B>On the Internet:</B>
 
 	- if chapter.website
