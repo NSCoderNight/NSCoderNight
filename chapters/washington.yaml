@@ -1,13 +1,15 @@
 ---
 name: Washington
-organizer_name: Jose Vasquez
-organizer_twitter: josevasquez
+organizers:
+  - name: Jose Vasquez
+    twitter: josevasquez
 twitter: nscodernightdc
 website: https://groups.google.com/forum/#!forum/nscodernightdc
-location: |
-    <a href="https://www.google.com/maps/place/7607+Old+Georgetown+Rd,+Bethesda,+MD+20814/@38.986028,-77.0957203,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7c964be7e7b93:0xb8df7fa255593beb">La Madeleine</a>
-    7607 Old Georgetown Road
-    Bethesda, MD
-    Near the Bethesda Metro station   
+meetings:
+  - location: |
+        <a href="https://www.google.com/maps/place/7607+Old+Georgetown+Rd,+Bethesda,+MD+20814/@38.986028,-77.0957203,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7c964be7e7b93:0xb8df7fa255593beb">La Madeleine</a>
+        7607 Old Georgetown Road
+        Bethesda, MD
+        Near the Bethesda Metro station   
 province: DC
 country: USA

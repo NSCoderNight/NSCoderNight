@@ -1,12 +1,15 @@
 ---
 name: Rochester
-organizer_name: Bob Spryn
-organizer_website: gfontenot
-website: http://www.meetup.com/NSCoder-Night-Rochester/members/6834274/
-location: |
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=739+Park+Ave%2C+Rochester%2C+NY%2C+US">Boulder Coffee Company</a>
-    739 Park Avenue
-day: Every other Monday.
-meeting_time: 7:00 p.m.
+organizers:
+  - name: Bob Spryn
+    twitter: gfontenot
+    website: http://www.meetup.com/NSCoder-Night-Rochester/members/6834274/
+website: http://www.meetup.com/NSCoder-Night-Rochester/
+meetings:
+  - day: Every other Monday
+    start_time: 7:00 p.m.
+    location: |
+        <a href="http://maps.google.com/maps?f=q&hl=en&q=739+Park+Ave%2C+Rochester%2C+NY%2C+US">Boulder Coffee Company</a>
+        739 Park Avenue
 province: NY
 country: USA

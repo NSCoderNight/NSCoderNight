@@ -1,14 +1,16 @@
 ---
 name: London
-organizer_name: Abizer Nasir
-organizer_twitter: abizern
-organizer_website: http://abizern.org/
+organizers:
+  - name: Abizer Nasir
+    twitter: abizern
+    website: http://abizern.org/
 twitter: NSCoderNightLon
 website: http://nscodernightlondon.com
-location: |
-    <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=65+Newcomen+Street,+London,+United+Kingdom&aq=0&oq=65+Newcomen&sll=37.0625,-95.677068&sspn=58.72842,124.716797&ie=UTF8&hq=&hnear=65+Newcomen+St,+London+SE1+1YT,+United+Kingdom&t=m&z=14&ll=51.502932,-0.090908">The Kings Arms</a>
-    65 Newcomen Street
-    SE1 1YT
+meetings:
+  - day: Third Tuesday of every month
+    start_time: 7:00 p.m.
+    location: |
+        <a href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=65+Newcomen+Street,+London,+United+Kingdom&aq=0&oq=65+Newcomen&sll=37.0625,-95.677068&sspn=58.72842,124.716797&ie=UTF8&hq=&hnear=65+Newcomen+St,+London+SE1+1YT,+United+Kingdom&t=m&z=14&ll=51.502932,-0.090908">The Kings Arms</a>
+        65 Newcomen Street
+        SE1 1YT
 country: United Kingdom
-day: Third Tuesday of every month
-meeting_time: 7:00 p.m. onwards

@@ -1,7 +1,8 @@
 ---
-name: 'Silicon Valley'
-location: |
-    <a href="http://www.orchardvalleycoffee.com/">Orchard Valley Coffee</a>
-    Campbell
+name: Silicon Valley
+meetings:
+  - location: |
+        <a href="http://www.orchardvalleycoffee.com/">Orchard Valley Coffee</a>
+        Campbell
 province: CA
 country: USA

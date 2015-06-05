@@ -1,12 +1,14 @@
 ---
 name: Milwaukee
-organizer_name: Dillan Laughlin
-organizer_website: http://www.meetup.com/NSCoderMilwaukee/members/14447281/
+organizers:
+  - name: Dillan Laughlin
+    website: http://www.meetup.com/NSCoderMilwaukee/members/14447281/
 website: http://www.meetup.com/NSCoderMilwaukee/
-location: |
-    <a href="http://www.meetup.com/NSCoderMilwaukee/events/222824179/">collectivo coffee</a>
-    2301 South Kinnickinnic Avenue
-day: Every other Tuesday.
-meeting_time: 7:00 p.m.
+meetings:
+  - start_time: 7:00 p.m.
+    day: Every other Tuesday
+    location: |
+        <a href="http://www.meetup.com/NSCoderMilwaukee/events/222824179/">collectivo coffee</a>
+        2301 South Kinnickinnic Avenue
 province: WI
 country: USA
