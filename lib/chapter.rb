@@ -38,7 +38,8 @@ class Chapter
     ATTRS = %i(
       name
       day
-      time
+      start_time
+      end_time
       location
     ).freeze
 

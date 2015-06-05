@@ -10,7 +10,10 @@ ruby:
   end
 
 - if chapter.organizers.any?
-  p <B>Organizers:</B>
+  - if chapter.organizers.count > 1
+    p <B>Organizers:</B>
+  - else
+    p <B>Organizer:</B>
 
   - for organizer in chapter.organizers
   	p
@@ -27,24 +30,30 @@ ruby:
 
 - if chapter.meetings.any?
   p
-    <B>Meetings:</B>
+    - if chapter.meetings.count > 1
+      p <B>Meetings:</B>
+    - else
+      p <B>Meeting:</B>
 
     - for meeting in chapter.meetings
-      - if meeting.location
-      	p
-      		p <B>Where:</B>
-      		p = paragraphs(meeting.location)
 
-      p
-      	p <B>When:</B>
-      	- if meeting.day
-      		| #{meeting.day}
-      	- else
-      		| Every Tuesday
-      	- if meeting.time
-      		| <BR>#{meeting.time}
-      	- else
-      		| <BR>7:00 p.m. - 10:00 p.m.
+      - if meeting.name
+          p <B>- #{meeting.name}:</B>
+
+      - if meeting.location
+        p = paragraphs(meeting.location)
+
+	  p
+	    - if meeting.day
+		  | #{meeting.day}
+	    - else
+		  | Every Tuesday
+	    - if meeting.start_time && meeting.end_time
+		  | <BR>#{meeting.start_time} - #{meeting.end_time}
+	    - elsif meeting.start_time
+		  | <BR>#{meeting.start_time}
+	    - else
+		  | <BR>7:00 p.m. - 10:00 p.m.<BR>
 
 - if chapter.website || chapter.twitter
 	p <B>On the Internet:</B>
