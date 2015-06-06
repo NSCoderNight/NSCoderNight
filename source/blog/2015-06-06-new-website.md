@@ -1,6 +1,6 @@
 ---
 title: New Website
-date: 2015-06-01 00:00 EST
+date: 2015-06-06 00:00 EST
 author: Andrew Pontious
 tags:
 ---
