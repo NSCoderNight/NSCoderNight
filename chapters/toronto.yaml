@@ -14,10 +14,10 @@ website: http://www.meetup.com/NSCoderTO/
 meetings:
   - name: Main series
     day: Last Tuesday of every month
-    location: Location varies, see website.
-    start_time: Time varies, see website.
+    location: Varies, see website
+    start_time: Varies, see website
   - name: West End
-    day: First and third Tuesday of every month.
+    day: First and third Tuesday of every month
     start_time: 7:30 p.m.
     location: |
         <a href="http://maps.google.com/maps?f=q&hl=en&q=1065+Canadian+Pl+%23104%2C+Mississauga%2C+ON%2C+ca">Studio 89</a>

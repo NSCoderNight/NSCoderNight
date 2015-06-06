@@ -41,19 +41,23 @@ ruby:
           p <B>- #{meeting.name}:</B>
 
       - if meeting.location
+        | Location:<BR>
         p = paragraphs(meeting.location)
 
 	  p
+		| Day and Frequency: 
 	    - if meeting.day
 		  | #{meeting.day}
 	    - else
 		  | Every Tuesday
+
+        | <BR>Time: 
 	    - if meeting.start_time && meeting.end_time
-		  | <BR>#{meeting.start_time} - #{meeting.end_time}
+		  | #{meeting.start_time} - #{meeting.end_time}
 	    - elsif meeting.start_time
-		  | <BR>#{meeting.start_time}
+		  | #{meeting.start_time}
 	    - else
-		  | <BR>7:00 p.m. - 10:00 p.m.<BR>
+		  | 7:00 p.m. - 10:00 p.m.<BR>
 
 - if chapter.website || chapter.twitter
 	p <B>On the Internet:</B>
