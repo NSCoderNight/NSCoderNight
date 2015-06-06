@@ -1,14 +1,26 @@
 ---
 name: Toronto
-organizer_name: Greg Heo
-organizer_twitter: gregheo
+organizers:
+  - name: Greg Heo
+    twitter: gregheo
+    website: http://www.meetup.com/NSCoderTO/members/13189731/
+  - name: Brendan
+    website: http://www.meetup.com/NSCoderTO/members/63985/
+  - name: Sohail
+    website: http://www.meetup.com/NSCoderTO/members/1686750/
+  - name: Pat Whitehead
+    website: http://www.meetup.com/NSCoderTO/members/75063582/
 website: http://www.meetup.com/NSCoderTO/
-location: |
-    Main series&#58; varies, see website.
-    West End&#58;
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=1065+Canadian+Pl+%23104%2C+Mississauga%2C+ON%2C+ca">Studio 89</a>
-    1065 Canadian Pl #104
-    Mississauga, ON
-meeting_time: West End&#58; 7:30 p.m.
-day: Main series&#58; last Tuesday of every month. West End&#58; First and third Tuesday of every month.
+meetings:
+  - name: Main series
+    day: Last Tuesday of every month
+    location: Varies, see website
+    start_time: Varies, see website
+  - name: West End
+    day: First and third Tuesday of every month
+    start_time: 7:30 p.m.
+    location: |
+        <a href="http://maps.google.com/maps?f=q&hl=en&q=1065+Canadian+Pl+%23104%2C+Mississauga%2C+ON%2C+ca">Studio 89</a>
+        1065 Canadian Pl #104
+        Mississauga, ON
 country: Canada

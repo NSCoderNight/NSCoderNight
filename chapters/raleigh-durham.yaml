@@ -1,18 +1,32 @@
 ---
 name: Raleigh-Durham
+organizers:
+  - name: Josh Johnson
+    twitter: jnjosh
+    website: http://jnjosh.com
+  - name: Marty Cullen
+    twitter: MartyCullen
+    website: http://www.meetup.com/nscoderrtp/members/12630346/
+  - name: Jay Thrash
+    twitter: jaythrash
+    website: http://jaythrash.com
 twitter: trianglecocoa
 website: http://meetup.com/nscoderrtp
-location: |
-    Raleigh:
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=1837+North+Harrison+Avenue++%2C+cary%2C+NC%2C+27513%2C+us">Rally Point Grill</a>
-    1837 North Harrison Avenue, Cary
-    Durham/Chapel Hill:
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=106+S+Greensboro+St%2C+Carrboro%2C+NC%2C+27510%2C+us">Steel String Brewery Taphouse</a>
-    106 South Greensboro Street, Carrboro
-    Clayton:
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=408+E+2nd+St%2C+Clayton%2C+NC%2C+US">The Flip Side</a>
-    408 East 2nd Street, Clayton
-meeting_time: Starts between 6:00 p.m. and 7:00 p.m. depending on location, see website for details.
-
+meetings:
+  - name: Raleigh
+    start_time: 6:45 p.m.
+    location: |
+      <a href="http://maps.google.com/maps?f=q&hl=en&q=1837+North+Harrison+Avenue++%2C+cary%2C+NC%2C+27513%2C+us">Rally Point Grill</a>
+      1837 North Harrison Avenue, Cary
+  - name: Durham/Chapel Hill
+    start_time: 7:00 p.m.
+    location: |
+      <a href="http://maps.google.com/maps?f=q&hl=en&q=106+S+Greensboro+St%2C+Carrboro%2C+NC%2C+27510%2C+us">Steel String Brewery Taphouse</a>
+        106 South Greensboro Street, Carrboro
+  - name: Clayton
+    start_time: 6:00 p.m.
+    location: |
+      <a href="http://maps.google.com/maps?f=q&hl=en&q=408+E+2nd+St%2C+Clayton%2C+NC%2C+US">The Flip Side</a>
+      408 East 2nd Street, Clayton
 province: NC
 country: USA

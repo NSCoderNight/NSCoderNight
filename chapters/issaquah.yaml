@@ -1,11 +1,13 @@
 ---
-name: 'Issaquah'
-organizer_name: Mark Thistle
-organizer_twitter: mthistle
+name: Issaquah
+organizers:
+  - name: Mark Thistle
+    twitter: mthistle
 website: http://droolfactory.blogspot.com/2015/01/nscoder-night-meetup-in-issaquah-wa.html
-location: |
-    <a href="https://www.google.com/maps/place/Starbucks/@47.5475616,-122.0609866,16z/data=!4m6!1m3!3m2!1s0x0:0xb2f48e40c507fe13!2sStarbucks!3m1!1s0x54906f753232f13d:0x37df812fa3bf602c">Starbucks Issaquah Meadows</a>
-    1460 Northwest Gilman Boulevard
-    Issaquah, WA 98027
+meetings:
+  - location: |
+        <a href="https://www.google.com/maps/place/Starbucks/@47.5475616,-122.0609866,16z/data=!4m6!1m3!3m2!1s0x0:0xb2f48e40c507fe13!2sStarbucks!3m1!1s0x54906f753232f13d:0x37df812fa3bf602c">Starbucks Issaquah Meadows</a>
+        1460 Northwest Gilman Boulevard
+        Issaquah, WA 98027
 province: WA
 country: USA

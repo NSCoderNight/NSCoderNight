@@ -1,10 +1,15 @@
 ---
 name: Mexico City
-organizer_name: Andreas Blick
-organizer_twitter: aquarioverde
-organizer_website: http://www.andreasblick.com
+organizers:
+  - name: Andreas Blick
+    twitter: aquarioverde
+    website: http://www.andreasblick.com
+  - name: Erick Camacho
+    twitter: ecamacho
+    website: http://www.erickcamacho.com
 website: http://www.meetup.com/NSCoderMexico/
-location: Varies, see website.
+meetings:
+  - location: Varies, see website
+    day: Once a month, mostly Thursdays, see website
+    start_time: 7:00 p.m. or 7:30 p.m., see website
 country: Mexico
-day: Once a month, mostly Thursdays, see website.
-meeting_time: 7:00 or 7:30, see website.

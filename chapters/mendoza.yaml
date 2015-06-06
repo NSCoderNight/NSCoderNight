@@ -1,12 +1,14 @@
 ---
 name: 'Mendoza'
-organizer_name: Martín Blech
-organizer_website: http://www.meetup.com/NSCoderMDZ/members/54681322/
+organizers:
+  - name: Martín Blech
+    website: http://www.meetup.com/NSCoderMDZ/members/54681322/
 twitter: NSCoderMDZ
-location: |
-    <a href="https://plus.google.com/100518888558998801699/about?gl=us&hl=en">Jerome Brew Pub</a>
-    Av. Villanueva Aristides 347
+meetings:
+  - day: First Monday of every month
+    start_time: '19:00'
+    location: |
+        <a href="https://plus.google.com/100518888558998801699/about?gl=us&hl=en">Jerome Brew Pub</a>
+        Av. Villanueva Aristides 347
 website: http://www.meetup.com/NSCoderMDZ/
 country: Argentina
-day: First Monday of every month
-meeting_time: 19:00

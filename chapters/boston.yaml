@@ -1,13 +1,16 @@
 ---
 name: Boston
-organizer_name: Gordon Fontenot
-organizer_twitter: gfontenot
+organizers:
+  - name: Gordon Fontenot
+    twitter: gfontenot
 website: http://www.meetup.com/NSCoder-Night-Boston
-location: |
-    <a href="http://maps.google.com/maps?f=q&hl=en&q=41+Winter+Street%2C+Boston%2C+MA%2C+02108%2C+us">thoughtbot</a>
-    41 Winter Street
-    8th floor
-day: Third Thursday of every month
-meeting_time: 6:30 p.m. - 9:00 p.m.
+meetings:
+  - day: Third Thursday of every month
+    start_time: 6:30 p.m.
+    end_time: 9:00 p.m.
+    location: |
+      <a href="http://maps.google.com/maps?f=q&hl=en&q=41+Winter+Street%2C+Boston%2C+MA%2C+02108%2C+us">thoughtbot</a>
+      41 Winter Street
+      8th floor
 province: MA
 country: USA
