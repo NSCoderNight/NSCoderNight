@@ -1,0 +1,15 @@
+---
+name: Colorado Springs
+organizers:
+  - name: Tom Harrington
+    twitter: atomicbird
+meetings:
+  - day: Every Tuesday
+    start_time: 7:00 p.m.
+    end_time: 9:00 p.m.
+    location: |
+      <a href="http://www.poativywild.com">The Principal's Office</a>
+      Ivywild School
+      1604 South Cascade Ave.
+province: CO
+country: USA
