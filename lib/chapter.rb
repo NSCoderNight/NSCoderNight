@@ -27,6 +27,7 @@ class Chapter
     ATTRS = %i(
       name
       email
+      phone
       twitter
       website
     ).freeze

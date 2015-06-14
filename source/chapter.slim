@@ -26,7 +26,10 @@ ruby:
   			== twitter_button(organizer.twitter)
   		- if organizer.email
   			|<BR>
-  			a mailto="#{organizer.email}" Email
+  			a href="mailto:#{organizer.email}" Email
+  		- if organizer.phone
+  			|<BR>
+  			| #{organizer.phone}
 
 - if chapter.meetings.any?
   p

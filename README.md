@@ -50,7 +50,7 @@ The <B>name</B> field is required and, as described above, must correspond to th
 
 The <B>organizers</B> field describes the one or more organizers of your chapter. If there is no organizer, leave out the <B>organizers</B> field entirely.
 
-Each organizer should have a <B>name</B> field and may have a <B>twitter</B> and/or a <B>website</B> field. Put each of these fields on their own line after the organizers line, indented 4 spaces. For the <I>first</I> field of an organizer, the third space should instead be a dash.
+Each organizer should have a <B>name</B> field and may have <B>twitter</B>, <B>website</B>, <B>email</B>, and <B>phone</B> fields. The Twitter, website, and email fields are turned into links. Email is not currently obfuscated in any way. Put each of these fields on their own line after the organizers line, indented 4 spaces. For the <I>first</I> field of an organizer, the third space should instead be a dash.
 
 You can have as many organizers as you want, and they will be listed in the order they appear in this file.
 
