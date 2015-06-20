@@ -1,7 +1,12 @@
 ---
 name: Silicon Valley
+organizers:
+  - name: Brian Webster
+    twitter: bwebster
 meetings:
-  - location: |
+  - start_time: 7:00 PM
+    end_time: 9:00 PM
+    location: |
         <a href="http://www.orchardvalleycoffee.com/">Orchard Valley Coffee</a>
         Campbell
 province: CA
