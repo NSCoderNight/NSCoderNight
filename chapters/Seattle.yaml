@@ -1,0 +1,15 @@
+---
+name: Seattle
+organizers:
+  - name: Seattle Xcoders (Hal Mueller)
+twitter: xcoders
+websites:
+  - http://seattlexcoders.org
+  - http://www.meetup.com/xcoders/
+meetings:
+  - location: |
+        <a href="http://www.waywardcoffee.com">Wayward Coffeehouse</a>
+        6417 Roosevelt Way NE #104
+        Seattle WA 98115
+province: WA
+country: USA
