@@ -54,8 +54,14 @@ Each organizer should have a <B>name</B> field and may have <B>twitter</B>, <B>w
 
 You can have as many organizers as you want, and they will be listed in the order they appear in this file.
 
-The <B>twitter</B> and <B>website</B> fields are for the chapter as a whole, and are optional.
+The <B>twitter</B> and <B>website</B> fields are for the chapter as a whole, and are optional. If you have more than one URL for the chapter, you can instead use the <B>websites</B> field, like so:
 
+````
+websites:
+	- http://website1.com
+	- http://website2.org
+	- http://website3.io
+````
 The <B>meetings</B> field describes the one or more meetings of your chapter, is, just like the <B>organizers</B> field describes multiple organizers. The format is the same.
 
 The meeting <b>name</b> name field is optional. Don't use if your chapter has only one meeting; instead, use it to distinguish between multiple meetings.

@@ -65,7 +65,10 @@ ruby:
 - if chapter.website || chapter.twitter
 	p <B>On the Internet:</B>
 
-	- if chapter.website
+	- if chapter.websites
+        - for website in chapter.websites
+    		a href="#{website}" title="#{website}" #{website}<BR>
+    - elsif chapter.website
 		a href="#{chapter.website}" title="#{chapter.website}" #{chapter.website}<BR>
 	- if chapter.twitter
 		== twitter_button(chapter.twitter)

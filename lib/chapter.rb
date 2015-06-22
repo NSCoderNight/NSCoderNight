@@ -53,6 +53,7 @@ class Chapter
     province
     country
     website
+    websites
     organizers
     meetings
   ).freeze
