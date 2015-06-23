@@ -2,14 +2,15 @@
 name: Rochester
 organizers:
   - name: Bob Spryn
-    twitter: gfontenot
-    website: http://www.meetup.com/NSCoder-Night-Rochester/members/6834274/
+    twitter: sprynmr
+    website: http://www.thumbworks.io
 website: http://www.meetup.com/NSCoder-Night-Rochester/
+twitter: NSCodersROC
 meetings:
   - day: Every other Monday
     start_time: 7:00 p.m.
     location: |
-        <a href="http://maps.google.com/maps?f=q&hl=en&q=739+Park+Ave%2C+Rochester%2C+NY%2C+US">Boulder Coffee Company</a>
+        <a href="https://foursquare.com/v/cafe-sasso/55637268498e7b19f8b2a121">Cafe Sasso</a>
         739 Park Avenue
 province: NY
 country: USA
