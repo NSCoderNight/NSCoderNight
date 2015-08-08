@@ -1,0 +1,17 @@
+---
+name: Phoenix Scottsdale
+organizers:
+  - name: Amelia Boli
+    twitter: AmeliaCodes
+twitter: NSCoderPhoenix
+website: http://www.meetup.com/Cocoaheads-Phoenix-Scottsdale/
+meetings:
+  - day: Every Thursday except the 2nd
+    start_time: 6:00 pm
+    end_time: 9:00pm
+    location: |
+        <a href="http://www.yelp.com/biz/paradise-bakery-and-cafe-scottsdale-4">Paradise Bakery & Cafe</a>
+        7145 E Indian School Rd
+        Scottsdale, AZ 85251
+province: AZ
+country: USA
