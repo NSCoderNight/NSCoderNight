@@ -1,0 +1,16 @@
+---
+name: Frankfurt
+organizers:
+  - name: Yang Meyer
+    twitter: yangmeyer
+    website: http://gemba.io
+meetings:
+  - day: Tuesday monthlyish
+    start_time: '19:00'
+    end_time: '22:00'
+    location: |
+        <a href="https://www.google.com/maps?f=q&hl=en&q=Berger+Straße+175,+Frankfurt,+de">Die Zentrale Coworking</a>
+        Berger Str. 175
+        Frankfurt
+website: http://www.meetup.com/NSCoder-Night-Frankfurt/
+country: Germany

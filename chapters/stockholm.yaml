@@ -1,0 +1,16 @@
+---
+name: Stockholm
+organizers:
+  - name: Reda Lemeden
+    twitter: kaishin
+  - name: Jack Nutting
+    twitter: jacknutting
+meetings:
+  - day: 4th Thursday of every month
+    start_time: '18:00'
+    location: |
+        <a href="https://www.google.com/maps/place/Sveavägen+98,+113+50+Stockholm,+Sweden/@59.3424568,18.0573404,17z/data=!3m1!4b1!4m2!3m1!1s0x465f9d6f2ebeb10f:0xf7fe3040ed485a38?hl=en">The Park</a>
+        Sveavägen 98
+        Stockholm
+website: http://www.meetup.com/NSCoderStockholm/
+country: Sweden
