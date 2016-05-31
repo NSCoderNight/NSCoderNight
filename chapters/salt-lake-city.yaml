@@ -1,0 +1,16 @@
+---
+name: Salt Lake City
+organizers:
+  - name: Andrew Madsen
+    twitter: armadsen
+    email: andrew@openreelsoftware.com
+twitter: UICodersSLC
+meetings:
+  - day: Every Thursday
+    start_time: 7:00 p.m.
+    end_time: 9:00 p.m.
+    location: |
+        <a href="http://www.paradisebakery.com/store_indiv.php?stid=56">Paradise Bakery</a>
+        618 E 400 S
+province: UT
+country: USA
