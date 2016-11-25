@@ -1,0 +1,16 @@
+---
+name: New York
+organizers:
+  - name: Michael Prenez-Isbell
+    twitter: MichaelIsbell
+website: https://www.meetup.com/NSCoderNight-New-York/
+meetings:
+  - day: Every Tuesday
+    start_time: 6:30 p.m.
+    end_time: 8:00 p.m.
+    location: |
+      <a href="https://www.google.com/maps?f=q&hl=en&q=399+West+Broadway,+New+York,+NY,+us">Ground Support</a>
+      399 West Broadway
+      New York
+province: NY
+country: USA
