@@ -1,0 +1,9 @@
+---
+name: Orem
+meetings:
+  - start_time: 7:00 p.m.
+    location: |
+        <a href="http://www.thechocolatedc.com">The Chocolate</a>
+        212 State St, Orem
+province: UT
+country: USA
