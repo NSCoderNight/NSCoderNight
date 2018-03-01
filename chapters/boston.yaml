@@ -1,16 +1,16 @@
 ---
 name: Boston
 organizers:
-  - name: Gordon Fontenot
-    twitter: gfontenot
+  - name: Zev Eisenberg
+    twitter: zeveisenberg
 website: http://www.meetup.com/NSCoder-Night-Boston
 meetings:
   - day: Third Thursday of every month
     start_time: 6:30 p.m.
     end_time: 9:00 p.m.
     location: |
-      <a href="http://maps.google.com/maps?f=q&hl=en&q=41+Winter+Street%2C+Boston%2C+MA%2C+02108%2C+us">thoughtbot</a>
-      41 Winter Street
-      8th floor
+      <a href="https://www.google.com/maps/place/50+Milk+St,+Boston,+MA+02110">Raizlabs</a>
+      50 Milk Street, 19th Floor
+      Boston MA 02109
 province: MA
 country: USA
