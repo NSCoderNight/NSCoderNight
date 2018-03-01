@@ -1,6 +1,6 @@
 # NSCoderNight
 
-Welcome to the GitHub repository for the <a href="http://www.nscodernight.com">NSCoderNight website</a>.
+Welcome to the GitHub repository for the <a href="http://nscodernight.com">NSCoderNight website</a>.
 
 <h3>Branches</h3>
 The <a href="https://github.com/nscodernight/nscodernight/tree/master">master</a> branch is for the files that are fed in to the <a href="https://middlemanapp.com">Middleman</a> static site generator framework by our <a href="https://travis-ci.org/NSCoderNight/NSCoderNight">Travis CI continuous build system</a>. If you clone this repository or create your own branch, do it off of here.
