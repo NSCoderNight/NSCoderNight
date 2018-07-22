@@ -1,0 +1,19 @@
+---
+name: Houston
+organizers:
+  - name: Travis Fischer
+    twitter: althefierce
+  - name: Alex Du Bois
+    twitter: alextall
+    website: http://alextall.com
+twitter: NSCodersHou
+website: http://nscodershouston.com
+meetings:
+  - day: First Tuesday of every month
+    start_time: '18:00'
+    location: |
+        <a href="http://www.chaione.com">ChaiOne</a>
+        1800 West Loop South #2100
+        Houston TX 77027
+province: TX
+country: USA
