@@ -18,7 +18,7 @@ Each chapter has its own file, whose name is a lowercase version of the chapter 
 <h4>Chapter File Format</h4>
 Here is a sample chapter file, called my-city.yaml.
 
-````
+```yml
 ---
 name: My City
 organizers:
@@ -32,18 +32,19 @@ meetings:
   - name: West End
     start_time: '19:00'
     location: |
-        <a href="http://www.yelp.com/biz/west-end-cafe">West End Cafe</a>
-        125 Westerly Road
+      <a href="http://www.yelp.com/biz/west-end-cafe">West End Cafe</a>
+      125 Westerly Road
   - name: East End
-	day: Every Tuesday
+    day: Every Tuesday
     start_time: 7:00 p.m.
     end_time: 10:00 p.m.
     location: |
-        <a href="http://www.yelp.com/biz/east-end-cafe">East End Cafe</a>
-        521 Easterly Road
+      <a href="http://www.yelp.com/biz/east-end-cafe">East End Cafe</a>
+      521 Easterly Road
 province: MN
 country: USA
-````
+```
+
 Each chapter file must start with three dashes follow by a return.
 
 The <B>name</B> field is required and, as described above, must correspond to the filename.
@@ -56,12 +57,12 @@ You can have as many organizers as you want, and they will be listed in the orde
 
 The <B>twitter</B> and <B>website</B> fields are for the chapter as a whole, and are optional. If you have more than one URL for the chapter, you can instead use the <B>websites</B> field, like so:
 
-````
+```yml
 websites:
-	- http://website1.com
-	- http://website2.org
-	- http://website3.io
-````
+  - http://website1.com
+  - http://website2.org
+  - http://website3.io
+```
 The <B>meetings</B> field describes the one or more meetings of your chapter, is, just like the <B>organizers</B> field describes multiple organizers. The format is the same.
 
 The meeting <b>name</b> name field is optional. Don't use if your chapter has only one meeting; instead, use it to distinguish between multiple meetings.
